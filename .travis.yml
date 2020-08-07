@@ -12,6 +12,7 @@ deploy:
   access_key_id: $ACCESS_KEY_ID
   secret_access_key: $SECRET_ACCESS_KEY
   region: "us-east-1"
-  app: "react-travis-docker"
-  env: "ReactTravisDocker-env"
+  app: "docker-lco"
+  env: "DockerLco-env"
   bucket_name: "elasticbeanstalk-us-east-1-166606814517"
+  bucket_path: "docker-lco"
