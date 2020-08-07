@@ -3,7 +3,7 @@ services:
 
 before_install:
 - echo $APP_ENV
-- docker build -t react-travis-dev -f Dockerfile.dev .
+- docker $APP_ENV -t react-travis-dev -f Dockerfile.dev .
 
 script:
 - docker run -e CI=true react-travis-dev npm run test
