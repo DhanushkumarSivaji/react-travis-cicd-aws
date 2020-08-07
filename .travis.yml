@@ -2,6 +2,7 @@ services:
   - docker
 
 before_install:
+- echo $APP_ENV
 - docker build -t react-travis-dev -f Dockerfile.dev .
 
 script:
